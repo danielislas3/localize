@@ -61,7 +61,10 @@ header nav a {
     height: 20%;
 }
 
-.selecType {
+.container {
+    border: black 1px;
     display: flex;
-    padding-top: 100px;
+    padding-top: 15vh;
+    padding-left: 5vw;
+    justify-content: space-evenly;
 }

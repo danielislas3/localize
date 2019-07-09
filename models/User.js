@@ -1,23 +1,46 @@
-const { model, Schema } = require('mongoose')
+const {
+    model,
+    Schema
+} = require('mongoose')
 const passportLocalMongoose = require('passport-local-mongoose')
 
-const userSchema = new Schema(
-  {
+const userSchema = new Schema({
+    name: {
+        type: String,
+        required: true
+    },
+    lastName: {
+        type: String,
+        required: true
+    },
+    owner: {
+        type: Boolean,
+        default: false
+    },
+    admin: {
+        type: Boolean,
+        default: false
+    },
+    reviews: {
+        type: [String]
+    },
     email: {
-      type: String,
-      required: true
+        type: String,
+        required: true
+    },
+    photo: {
+        type: String,
+        required: true
     }
-  },
-  {
+}, {
     timestamps: true,
     versionKey: false
-  }
-)
+})
 
 // We add steroids to our model, because of this, we don't have to add the "password" field to our model
 userSchema.plugin(passportLocalMongoose, {
-  // PLM by default register users with "username" and "password", we need to configure a different field
-  usernameField: 'email'
+    // PLM by default register users with "username" and "password", we need to configure a different field
+    usernameField: 'email'
 })
 
 module.exports = model('User', userSchema)
