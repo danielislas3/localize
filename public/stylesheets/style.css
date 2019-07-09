@@ -52,4 +52,8 @@ header nav a {
   width: 50%;
   height: 20%; }
 
+.selecType {
+  display: flex;
+  padding-top: 100px; }
+
 /*# sourceMappingURL=style.css.map */
