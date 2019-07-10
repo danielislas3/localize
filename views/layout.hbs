@@ -7,15 +7,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>{{title}}</title>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="stylesheets/style.css" />
-  <script src="https://kit.fontawesome.com/d5ce87c5d3.js"></script>
 </head>
 
 <body>
   <header id="header">
     <!-- Mobil nav -->
-    <nav class="mobil-nav">
+    <nav class="mobil-nav" >
+      <label class="icon"><a href="/">Icono</a></label>
       <input id="menu-toggle" type="checkbox" />
       <label for="menu-toggle" class="menu-on"> <i class="fas fa-bars fa-2x"></i></label>
       <label for="menu-toggle" class="menu-off"><i class="fas fa-times fa-2x"></i></label>
@@ -36,6 +37,8 @@
     </nav>
     <!-- Nav -->
     <nav class="nav">
+     <label class="icon"><a href="/">Icono</a></label>
+
       <ul class="nav-row">
         <li class="nav-links"><a href="/">Home</a></li>
         {{#if loggedUser}}
@@ -59,8 +62,7 @@
   <!--Bootstrap y jquiery-->
   <script src="/js/jquery.js"></script>
   <script src="/js/bootstrap.min.js"></script>
-  <!--Vendor-JS-->
-
+  <script src="https://kit.fontawesome.com/d5ce87c5d3.js"></script>
   <!--Main-active-JS-->
   <script src="javascripts/script.js"></script>
 </body>
