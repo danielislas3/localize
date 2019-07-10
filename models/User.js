@@ -33,7 +33,10 @@ const userSchema = new Schema({
         type: String,
         required: true
     },
-    photo: String
+    photo: {
+        type: String,
+        default: 'https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/256x256/plain/user.png'
+    }
 }, {
     timestamps: true,
     versionKey: false

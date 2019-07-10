@@ -15,7 +15,12 @@ const reviewsSchema = new Schema({
     photo: {
         type: Schema.Types.ObjectId,
         ref: 'User'
-    }, //referenciada del User
+    },
+    name: {
+        type: Schema.Types.ObjectId,
+        ref: 'User'
+    },
+    //referenciada del User
     like: Number,
 }, {
     timestamps: true,

@@ -11,8 +11,10 @@ const locationSchema = new Schema({
         address: String,
         coordinates: [Number]
     },
-    photo: [String],
-    required: true
+    photo: {
+        type: [String],
+        required: true
+    }
 }, {
     timestamps: true,
     versionKey: false
