@@ -13,8 +13,8 @@ const reviewsSchema = new Schema({
         required: true
     },
     photo: {
-        type: String,
-        default: ""
+        type: Schema.Types.ObjectId,
+        ref: 'User'
     }, //referenciada del User
     like: Number,
 }, {
