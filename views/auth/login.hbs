@@ -1,31 +1,60 @@
-<div class="signup">
-  {{#if err}}
-  <h2>{{err}}</h2>
-  {{else}}
-  <h2>Login</h2>
-  {{/if}}
-  {{!-- <form action="/login" method="POST">
-    <input type="email" name="email" placeholder="Email" />
-    <input type="password" name="password" placeholder="Password" />
-    <input type="submit" value="Login">
-  </form> --}}
-    <div class="form-modal">
-    
-    
-    
-        <div id="login-form">
-            <form action="/login" method="POST">
-                <input type="email" placeholder="Enter email "/>
-                <input type="password" placeholder="Enter password"/>
-                <input type="submit" value="Login" class="btn login">
+{{#if err}}
+<h2>{{err}}</h2>
+{{else}}
 
-                <p><a href="javascript:void(0)">Forgotten password</a></p>
-                <hr/>
-                <button type="button" class="btn-box-sd-effect"> <i class="fa fa-google fa-lg" aria-hidden="true"></i> sign in with facebook</button>
-            
-            </form>
+
+
+
+
+<div class="box-form">
+    <div class="left">
+        <div class="overlay">
+
+            <h1>Mejora tu vida</h1>
+            <h6>Encuentra el lugar que más se adapte a tus necesidades</h6>
+            <span>
+                <br />
+                <h6>Login with social media</h6>
+                <br />
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a>
+                <a href="#" style="display: none;"></a>
+
+            </span>
         </div>
-    
     </div>
-    
+
+    {{!-- div del form --}}
+
+  <div class="right">
+
+       <p>Don't have an account? Creat Your Account. It takes less than a minute</p>
+      <h5 class="login Text">Login</h5>
+      <br/>
+      
+   
+    <div class="inputs">
+
+     <form action="/login" method="POST">
+
+        <input type="email" name="email" placeholder="Email" />
+        <input type="password" name="password" placeholder="Password" />
+        <br/>
+        <button class="sign" type="submit" value="Register"> Login</button>
+     </form>
+
+    </div>
+
+    <br><br>
+
+
+
+  </div>
+
+
+
 </div>
+
+
+
+{{/if}}
+
