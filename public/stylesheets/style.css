@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
-
-a {
-  color: #00B7FF; }
-=======
 * {
   padding: 0;
   margin: 0; }
@@ -55,23 +47,6 @@ header nav a {
   display: flex;
   padding-top: 100px; }
 
-<<<<<<< HEAD
-.signup form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 50%;
-  height: 20%; }
->>>>>>> a49527a91fa8381e887e216b85a776fbdc7501b4
-
-.container {
-  border: black 1px;
-  display: flex;
-  padding-top: 15vh;
-  padding-left: 5vw;
-  justify-content: space-evenly; }
-=======
 /* Header */
 #header {
   position: fixed;
@@ -80,7 +55,6 @@ header nav a {
   background: #00ccff;
   box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3); }
 
-/* Dont display the checkbox */
 #menu-toggle {
   display: none; }
 
@@ -187,7 +161,7 @@ header nav a {
   margin: 140px auto 0 auto;
   width: 80%;
   height: auto;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 10px;
   overflow: hidden;
   display: flex;
@@ -202,7 +176,7 @@ header nav a {
       align-content: center;
       align-items: center; } }
   .box-form .left {
-    color: #FFFFFF;
+    color: #ffffff;
     background-size: cover;
     background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/334-pai9436-beer-en140.jpg?auto=format&bg=F4F4F3&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-1.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=1600&s=fb679e99d8c637fed0a096d26a974fdc");
     overflow: hidden; }
@@ -215,10 +189,10 @@ header nav a {
       box-sizing: border-box; }
       @media (min-width: 620px) and (max-width: 770px) {
         .box-form .left .overlay {
-          padding: 10vh; } }
+          padding: 17.5vh; } }
       @media (min-width: 770px) and (max-width: 981px) {
         .box-form .left .overlay {
-          padding: 13vh; } }
+          padding: 20.2vh; } }
       .box-form .left .overlay h1 {
         font-size: 8vmax;
         line-height: 1;
@@ -234,7 +208,7 @@ header nav a {
         font-weight: 900; }
       .box-form .left .overlay span a {
         background: #3b5998;
-        color: #FFFFFF;
+        color: #ffffff;
         margin-top: 10px;
         padding: 14px 50px;
         border-radius: 100px;
@@ -256,7 +230,7 @@ header nav a {
       line-height: 0; }
     .box-form .right p {
       font-size: 12px;
-      color: #B0B3B9; }
+      color: #b0b3b9; }
     .box-form .right .inputs {
       overflow: hidden; }
     .box-form .right .inputs button {
@@ -272,7 +246,7 @@ header nav a {
       font-size: 14px;
       border: none;
       outline: none;
-      border-bottom: 2px solid #B0B3B9; }
+      border-bottom: 2px solid #b0b3b9; }
     .box-form .right .remember-me--forget-password {
       display: flex;
       justify-content: space-between;
@@ -290,7 +264,7 @@ header nav a {
       border: 0;
       outline: 0;
       box-shadow: 0px 4px 20px 0px #49c628a6;
-      background-image: linear-gradient(135deg, #70F570 10%, #49C628 100%); }
+      background-image: linear-gradient(135deg, #70f570 10%, #49c628 100%); }
     @media (max-width: 435px) {
       .box-form .right .inputs button {
         margin-top: 35px;
@@ -312,7 +286,7 @@ header nav a {
   position: absolute;
   font-family: FontAwesome;
   background: transparent;
-  border: 3px solid #70F570;
+  border: 3px solid #70f570;
   border-radius: 4px;
   color: transparent;
   left: -30px;
@@ -323,10 +297,10 @@ header nav a {
   content: ' \f00c';
   color: #fff;
   cursor: pointer;
-  background: #70F570; }
+  background: #70f570; }
 
 .label-login:hover::before .text-checkbox {
-  background: #70F570; }
+  background: #70f570; }
 
 .label-login span.text-checkbox {
   display: inline-block;
@@ -335,8 +309,14 @@ header nav a {
   cursor: pointer;
   transition: all 0.2s linear; }
 
-label input[type="checkbox"] {
+label input[type='checkbox'] {
   display: none; }
->>>>>>> 0a00a55b1ddac2bac3d12492a62a61a0e7eac4fb
+
+.mientras {
+  border: black 1px;
+  display: flex;
+  padding-top: 15vh;
+  padding-left: 5vw;
+  justify-content: space-evenly; }
 
 /*# sourceMappingURL=style.css.map */
