@@ -61,4 +61,11 @@ header nav a {
   height: 20%; }
 >>>>>>> a49527a91fa8381e887e216b85a776fbdc7501b4
 
+.container {
+  border: black 1px;
+  display: flex;
+  padding-top: 15vh;
+  padding-left: 5vw;
+  justify-content: space-evenly; }
+
 /*# sourceMappingURL=style.css.map */
