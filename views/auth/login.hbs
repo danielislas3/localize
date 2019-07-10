@@ -4,9 +4,30 @@
   {{else}}
   <h2>Login</h2>
   {{/if}}
-  <form action="/login" method="POST">
+  {{!-- <form action="/login" method="POST">
     <input type="email" name="email" placeholder="Email" />
     <input type="password" name="password" placeholder="Password" />
     <input type="submit" value="Login">
-  </form>
+  </form> --}}
+    <div class="form-modal">
+    
+        <div class="form-toggle">
+            <button id="login-toggle" onclick="toggleLogin()">log in</button>
+        </div>
+    
+        <div id="login-form">
+            <form action="/login" method="POST">
+                <input type="email" placeholder="Enter email "/>
+                <input type="password" placeholder="Enter password"/>
+                <input type="submit" value="Login" class="btn login">
+
+                <p><a href="javascript:void(0)">Forgotten password</a></p>
+                <hr/>
+                <button type="button" class="btn -box-sd-effect"> <i class="fa fa-google fa-lg" aria-hidden="true"></i> sign in with facebook</button>
+            
+            </form>
+        </div>
+    
+    </div>
+    
 </div>
