@@ -1,6 +1,6 @@
 const Location = require('../models/Location')
 
-exports.getRestaurants = (req, res, next) => res.render('search/restaurants')
+exports.getRestaurants = (req, res, next) => res.render('search/restaurants', { layout: true })
 
 exports.getBars = (req, res, next) => res.render('search/bars')
 
