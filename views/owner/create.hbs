@@ -1,5 +1,5 @@
 <div class="mientras">
-  <form action="/myLocations/create" method="post" novalidate>
+  <form action="/myLocations/create" method="POST" novalidate>
     <p>
       <label for="name">Name</label>
       <input type="text" name="name" placeholder="Name" id="name">
@@ -7,7 +7,7 @@
 
     <p>
       <label for="type">Type</label>
-      <select name="placeType" id="type">
+      <select name="locoationType" id="locoationType">
         <option value="cantina">Cantina</option>
         <option value="bar">Bar</option>
         <option value="antro">Antro</option>
@@ -15,8 +15,8 @@
       </select>
     </p>
 
-    <input type="number" name="location[coordinates][0]" id="lng" hidden>
-    <input type="number" name="location[coordinates][1]" id="lat" hidden>
+    <input type="number" name="lng" id="lng" hidden>
+    <input type="number" name="lat" id="lat" hidden>
 
     <input type="submit" value="Create">
   </form>

@@ -46,10 +46,12 @@ exports.getCreateLocation = (req, res, next) => res.render('owner/create')
 exports.postCreateLocation = (req, res, next) => {
     const {
         name,
-        location,
         photo,
-        locationTipe
+        locationTipe,
+        lat,
+        lng
     } = req.body
+    const location = {coordinates: [lat,lng]}
     const n = {
         ...location,
         coordinates: [Number(location.coordinates[0], Number(location.coordinates[1]))]
