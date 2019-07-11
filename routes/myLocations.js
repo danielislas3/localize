@@ -1,9 +1,15 @@
 const router = require('express').Router()
 
 const {
-    getMyLocations
+    getLocations,
+    getCreateLocation,
+    postCreateLocation
 } = require('../controllers/owner.controller')
 
-router.get('/myLocations', getMyLocations)
+router.get('/', getLocations)
+
+router.get('/create', getCreateLocation)
+
+router.post('/create', postCreateLocation)
 
 module.exports = router

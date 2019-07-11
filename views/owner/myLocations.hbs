@@ -1,8 +1,10 @@
 <div class="mientras">
-  <form action="/owner/myLocations" method="POST">
-    <input type="text" name="name" id="name" placeholder="Nombre">
-    <input type="text" name="location" id="location" placeholder="coordenadas">
-    <input type="file" name="photo" id="photo">
-    <input type="submit" value="Create Location">
-  </form>
+  <h1>My Locations</h1>
+
+  {{#each locations as |location|}}
+  <a href="/myLocations/{{location._id}}">{{location.name}}</a>
+  {{/each}}
+
+  <br />
+  <a href="/myLocations/create">Create new</a>
 </div>

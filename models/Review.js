@@ -12,11 +12,11 @@ const reviewsSchema = new Schema({
         type: Number,
         required: true
     },
-    photo: {
+    displayImage: {
         type: Schema.Types.ObjectId,
         ref: 'User'
     },
-    name: {
+    author: {
         type: Schema.Types.ObjectId,
         ref: 'User'
     },

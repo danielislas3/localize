@@ -17,18 +17,18 @@ const userSchema = new Schema({
         type: Boolean,
         default: false
     },
-    locations: [{
-        type: Schema.Types.ObjectId,
-        ref: 'Location'
-    }],
+    // locations: [{
+    //     type: Schema.Types.ObjectId,
+    //     ref: 'Location'
+    // }],
     admin: {
         type: Boolean,
         default: false
     },
-    reviews: [{
-        type: Schema.Types.ObjectId,
-        ref: 'Reviews'
-    }],
+    // reviews: [{
+    //     type: Schema.Types.ObjectId,
+    //     ref: 'Reviews'
+    // }],
     email: {
         type: String,
         required: true

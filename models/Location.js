@@ -5,16 +5,42 @@ const {
 
 const locationSchema = new Schema({
 
-    name: String,
-    ranking: Number,
-    location: {
-        address: String,
-        coordinates: [Number]
+    name: {
+        type: String,
+        required: true
     },
+    locationType: {
+        type: String,
+        enum: ['bar', 'restaurant', 'library', 'hotel', 'entreteinmentCenter'],
+        required: true
+    },
+
+    ranking: {
+        type: Number,
+        required: true
+    },
+    location: {
+        address: {
+            type: String,
+            default: 'Point'
+        },
+        coordinates: [Number],
+
+    },
+
     photo: {
         type: [String],
         required: true
+    },
+    owner: {
+        type: Schema.Types.ObjectId,
+        ref: 'User'
+    },
+    description: {
+        type: String,
+        required: true
     }
+
 }, {
     timestamps: true,
     versionKey: false

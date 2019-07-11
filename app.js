@@ -91,6 +91,6 @@ const mylocations = require('./routes/myLocations')
     // We use the middleware for dynamic navbar
 app.use('/', checkLoggedUser, index)
 app.use('/search', search)
-app.use('/owner', mylocations)
+app.use('/myLocations', mylocations)
 
 module.exports = app
