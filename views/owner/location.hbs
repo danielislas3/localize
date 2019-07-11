@@ -1,0 +1,25 @@
+<div class="mientras">
+  <h2>{{name}}</h2>
+  <h4>{{locationType}}</h4>
+
+  <div id="map" style="width: 400px; height: 300px"></div>
+  <p>CORDENADAS: {{location.coordinates}}</p>
+  <p>{{ranking}}</p>
+  <p>{{description}}</p>
+
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZGl1cml2aiIsImEiOiJjanAxdjA2cTQwMGp1M2tvYzZmZGp3bWc3In0.4cZEyLkU2ikqx_wb4A1z8A';
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      zoom: 14,
+      center: [{{ location.coordinates }}]
+ })
+    const marker = new mapboxgl.Marker({
+      color: 'red'
+    })
+      .setLngLat([{{ location.coordinates }}])
+   .addTo(map)
+  </script>
+
+</div>
