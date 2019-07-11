@@ -15,10 +15,8 @@ const locationSchema = new Schema({
         required: true
     },
 
-    ranking: {
-        type: Number,
-        required: true
-    },
+    ranking: Number,
+
     location: {
         address: {
             type: String,
@@ -30,6 +28,7 @@ const locationSchema = new Schema({
 
     photo: {
         type: [String],
+        default: 'https://image.flaticon.com/icons/svg/63/63610.svg',
         required: true
     },
     owner: {

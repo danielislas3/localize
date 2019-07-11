@@ -1,22 +1,25 @@
 <div class="mientras">
-  <form action="/myLocations/create" method="post" novalidate>
+  <form action="/myLocations/create/" method="POST" novalidate>
     <p>
       <label for="name">Name</label>
       <input type="text" name="name" placeholder="Name" id="name">
     </p>
 
     <p>
-      <label for="type">Type</label>
-      <select name="placeType" id="type">
+      <label for="locationType">Type</label>
+      <select name="locationType" id="locationType">
         <option value="cantina">Cantina</option>
         <option value="bar">Bar</option>
         <option value="antro">Antro</option>
-        <option value="restaurante">Restaurante</option>
+        <option value="restaurant">Restaurante</option>
       </select>
     </p>
+    <p>
+      <input type="text" name="description" placeholder="Descripción">
+    </p>
 
-    <input type="number" name="location[coordinates][0]" id="lng" hidden>
-    <input type="number" name="location[coordinates][1]" id="lat" hidden>
+    <input type="number" name="lng" id="lng" hidden>
+    <input type="number" name="lat" id="lat" hidden>
 
     <input type="submit" value="Create">
   </form>

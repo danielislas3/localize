@@ -1,7 +1,10 @@
 <div class="mientras">
   <h1>My Locations</h1>
 
+
+
   {{#each locations as |location|}}
+  <h1>{{location.name }}</h1>
   <a href="/myLocations/{{location._id}}">{{location.name}}</a>
   {{/each}}
 

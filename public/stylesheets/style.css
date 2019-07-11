@@ -319,4 +319,8 @@ label input[type='checkbox'] {
   padding-left: 5vw;
   justify-content: space-evenly; }
 
+.mapboxgl-popup {
+  max-width: 400px;
+  font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif; }
+
 /*# sourceMappingURL=style.css.map */

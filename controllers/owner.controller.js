@@ -46,10 +46,14 @@ exports.getCreateLocation = (req, res, next) => res.render('owner/create')
 exports.postCreateLocation = (req, res, next) => {
     const {
         name,
-        location,
         photo,
-        locationTipe
+        locationType,
+        lat,
+        lng
     } = req.body
+    const location = {
+        coordinates: [lat, lng]
+    }
     const n = {
         ...location,
         coordinates: [Number(location.coordinates[0], Number(location.coordinates[1]))]
@@ -76,7 +80,7 @@ exports.postEditLocation = (req, res, next) => {
         }, {
             new: true
         })
-        .then(location => res.redirect(`/myLocation/${location._id}`))
+        .then(location => res.redirect(`/myLocation/${location._id}`, location))
         .catch(err => next(err))
 }
 

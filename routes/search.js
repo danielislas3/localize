@@ -1,21 +1,13 @@
 const router = require('express').Router()
 
 const {
-    getEntreteinmentCenter,
-    getHotels,
-    getBars,
-    getLibraries,
-    getRestaurants
+    getAllLocations,
+    getOneLocation
 } = require('../controllers/search.controller')
 
-router.get('/bars', getBars)
+router.get('/', getAllLocations)
 
-router.get('/entreteinmentCenter', getEntreteinmentCenter)
+router.get('/:id', getOneLocation)
 
-router.get('/hotels', getHotels)
-
-router.get('/libraries', getLibraries)
-
-router.get('/restaurants', getRestaurants)
 
 module.exports = router
