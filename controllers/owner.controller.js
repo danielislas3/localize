@@ -51,17 +51,12 @@ exports.postCreateLocation = (req, res, next) => {
         lat,
         lng
     } = req.body
-    const location = {
-        coordinates: [lat, lng]
-    }
-    const n = {
-        ...location,
-        coordinates: [Number(location.coordinates[0], Number(location.coordinates[1]))]
-    }
 
     Location.create({
             ...req.body,
-            n,
+            location: {
+                coordinates: [Number(lng), Number(lat)]
+            },
             owner: req.user.id
         })
         .then(location => res.redirect(`/myLocations/${location._id}`))
