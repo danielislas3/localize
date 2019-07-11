@@ -5,7 +5,7 @@ const {
     getOneLocation
 } = require('../controllers/search.controller')
 
-router.get('/', getAllLocations)
+router.get('/locations', getAllLocations)
 
 router.get('/:id', getOneLocation)
 

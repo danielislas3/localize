@@ -1,13 +1,11 @@
 <div class="container mientras columns-cards">
   <h1>Locations</h1>
-{{#each locations }}
-   {{> locationCard }}
+  {{#each locations }}
+  <p>{{this.locations}}</p>
+  {{> locationCard }}
   <a href="/locations/{{this.locations.id}}">{{this.locations.name}}</a>
-{{/each}}
+  {{/each}}
 
-<br/>
+  <br />
 
 </div>
-
-
-
