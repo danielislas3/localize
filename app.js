@@ -87,8 +87,10 @@ app.locals.title = 'Localize'
 
 const index = require('./routes/index')
 const search = require('./routes/search')
+const mylocations = require('./routes/myLocations')
     // We use the middleware for dynamic navbar
 app.use('/', checkLoggedUser, index)
 app.use('/search', search)
+app.use('/owner', mylocations)
 
 module.exports = app
