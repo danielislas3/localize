@@ -1,5 +1,12 @@
 <div class="mientras">
   <div class="signup">
-    <h2>The logged user {{user.name}} {{user.lastName}}</h2>
+    <h2>The logged user {{user.name}} {{user.lastName}} {{user.owner}}</h2>
+    {{#if user.owner}}
+      <p>va a mostrar sus locaciones</p>
+      <a href="/myLocations">LOCACIONES</a>
+      {{else}}
+      <p>NO ES OWNER</p>
+    {{/if}}
+
   </div>
 </div>
