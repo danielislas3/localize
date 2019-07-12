@@ -1,15 +1,31 @@
 <div class="mientras">
-  <div class="container">
-    <h1>Name: {{name}}</h1>
-    <h4>Location type: {{locationType}}</h4>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+    integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
-    <div id="map" style="width: 400px; height: 300px"></div>
-    <p>CORDENADAS: {{location.coordinates}}</p>
-    <p>{{ranking}}</p>
-    <h3>Description: {{description}}</h3>
-  <a href="/myLocations/{{_id}}/edit"><button >editar</button></a>
-  <a href="/myLocations/{{_id}}/delete"><button >Eliminar</button></a>
-    <script>
+  <div class="row" id="contatti">
+    <div class="container mt-5">
+
+      <div class="row" style="height:550px;">
+        <div class="col-md-6 maps">
+          <div id="map" style="width: 400px; height: 300px"></div>
+        </div>
+        <div cla≤ss="col-md-6">
+          <div class="col-lg-6">
+            <h1>Name: {{name}}</h1>
+            <h4>Location type: {{locationType}}</h4>
+            <p>{{ranking}}</p>
+            <h3>Description: {{description}}</h3>
+            <a href="/myLocations/{{_id}}/edit"><button class="btn btn-warning">editar</button></a>
+            <a href="/myLocations/{{_id}}/delete"><button class="btn btn-danger">Eliminar</button></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+   <script>
       mapboxgl.accessToken = 'pk.eyJ1IjoiZGl1cml2aiIsImEiOiJjanAxdjA2cTQwMGp1M2tvYzZmZGp3bWc3In0.4cZEyLkU2ikqx_wb4A1z8A';
       const map = new mapboxgl.Map({
         
@@ -17,13 +33,10 @@
         style: 'mapbox://styles/mapbox/streets-v11',
         zoom: 14,
         center: [{{ location.coordinates }}]
- })
+      })
       const marker = new mapboxgl.Marker({
         color: 'red'
       })
         .setLngLat([{{ location.coordinates }}])
    .addTo(map)
     </script>
-
-  </div>
-</div>

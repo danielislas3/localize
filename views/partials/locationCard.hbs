@@ -1,9 +1,13 @@
 
-  <div class="card">
-      <img class="imagenCard" src={{photo}} alt="place photo">
-      <h3>El nombre en cards:{{this.name}}</h3>
-      <h4>{{this.locationType}}</h4>
-      <p>Ranking: {{this.ranking}}</p>
-      <p>Description:{{this.description}}</p>
-    
+<div class="card mb-4" style="width: 18rem;">
+      <img class="card-img-top" src={{photo}} alt="place photo">
+       <div class="card-body">
+          <h5 class="card-title">{{this.name}}</h5>
+          <p class="card-text">{{this.description}}</p>
+          <p class="text-muted">{{this.locationType}}</p>
+          <p class="card-text">{{this.ranking}}</p>
+           <a href="/search/locations/{{this.id}}" class="btn btn-primary">Ver detalles</a>
+       </div>
+  
   </div>
+

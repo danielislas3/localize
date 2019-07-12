@@ -1,13 +1,19 @@
-<div class="mientras">
-  <h1>My Locations</h1>
+<div class="container card1" style="padding-top: 15vh">
+  <h1 >My Locations</h1>
+    <div class="card-deck">
+          {{#each locations as |location|}}
+            <div class="card"  style="width: 18rem;">
+              <img class="card-img-top"src="{{location.photo}}" alt="">
+              <div class="card-body">
+             <h5 class="card-title">{{location.name }}</h5>
+              <p class="card-text">{{location.locationType}}</p>
+             <a class="btn btn-primary" href="/myLocations/{{location._id}}">Detalles</a>
+              </div>
+           </div>
+         {{/each}}
 
-
-
-  {{#each locations as |location|}}
-  <h1>{{location.name }}</h1>
-  <a href="/myLocations/{{location._id}}">{{location.name}}</a>
-  {{/each}}
-
-  <br />
-  <a href="/myLocations/create">Create new</a>
+    <br />
+  </div>
+  <br/>
+    <a  href="/myLocations/create"> <button type="button" class="btn btn-warning">Create new</button></a>
 </div>

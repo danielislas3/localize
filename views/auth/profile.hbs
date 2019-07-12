@@ -1,5 +1,47 @@
+
 <div class="mientras">
-  <div class="signup">
-    <h2>The logged user {{user.name}} {{user.lastName}}</h2>
-  </div>
+
+  <div class="container">
+   
+    <!-- Modal -->
+    <div class="span3 well" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    </div>
+                <div class="modal-body">
+                    <center>
+                    <img src="{{user.photo}}" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
+                    <h3 class="media-heading">{{user.name}}</h3>
+                    <h3 class="media-heading">{{user.lastName}}</h3>
+                    <span><strong>Rol: {{#if user.owner}}
+                        Owner
+                        {{else}}
+                        User
+                    {{/if}} </strong></span>
+                      
+                    </center>
+                    <hr>
+                    <center>
+                       
+                    <p class="text-left"><strong>Email: </strong><br>{{user.email}} </p>
+                    <br>
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <center>
+                         {{#if user.owner}}
+                         <a href="/myLocations"><button type="button" class="btn btn-default" >Mis Locaciones</button></a>
+                            
+                        {{/if}}
+                    
+                    {{!-- <button type="button" class="btn btn-default" data-dismiss="modal">Regresar</button> --}}
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+</div>
+
