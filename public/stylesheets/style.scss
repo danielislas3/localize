@@ -514,6 +514,62 @@ section.jumbotron .container {
 
 
 }
-.card .btn{
-    color: white;
-}
+
+#contatti{
+    background-color: white;
+    letter-spacing: 2px;
+    }
+  #contatti a{
+    color:black;
+    text-decoration: none;
+  }
+  
+  
+  @media (max-width: 575.98px) {
+  
+    #contatti{padding-bottom: 800px;}
+    #contatti .maps iframe{
+      width: 100%;
+      height: 450px;
+    }
+   }
+  
+  
+  @media (min-width: 576px) {
+  
+     #contatti{padding-bottom: 800px;}
+  
+     #contatti .maps iframe{
+       width: 100%;
+       height: 450px;
+     }
+   }
+  
+  @media (min-width: 768px) {
+  
+    #contatti{padding-bottom: 350px;}
+  
+    #contatti .maps iframe{
+      width: 100%;
+      height: 850px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    #contatti{padding-bottom: 200px;}
+  
+     #contatti .maps iframe{
+       width: 100%;
+       height: 700px;
+     }
+  }
+  
+  
+  #author a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+      
+  }
+  #contatti h2{
+      color: #000
+  }
