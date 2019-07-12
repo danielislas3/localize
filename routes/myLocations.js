@@ -14,7 +14,8 @@ const {
     getCreateLocation,
     postCreateLocation,
     getEditLocation,
-    postEditLocation
+    postEditLocation,
+    getDeleteLocation
 } = require('../controllers/owner.controller')
 
 //localhost:3000/myLocations
@@ -25,8 +26,10 @@ router.post('/create', isLoggedIn, postCreateLocation)
 router.get('/', isLoggedIn, checkRole, getLocations)
 router.get('/:id', isLoggedIn, getOneLocation)
     /****************crUd ****************/
-router.get('/:id', getEditLocation)
-router.post('/:id', postEditLocation)
+router.get('/:id/edit', getEditLocation)
+router.post('/:id/edit', postEditLocation)
+    /*****************cruD ************/
+router.get('/:id/edit', getDeleteLocation)
 
 
 
