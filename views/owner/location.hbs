@@ -7,7 +7,8 @@
     <p>CORDENADAS: {{location.coordinates}}</p>
     <p>{{ranking}}</p>
     <h3>Description: {{description}}</h3>
-
+  <a href="/myLocations/{{_id}}/edit"><button >editar</button></a>
+  <a href="/myLocations/{{_id}}/delete"><button >Eliminar</button></a>
     <script>
       mapboxgl.accessToken = 'pk.eyJ1IjoiZGl1cml2aiIsImEiOiJjanAxdjA2cTQwMGp1M2tvYzZmZGp3bWc3In0.4cZEyLkU2ikqx_wb4A1z8A';
       const map = new mapboxgl.Map({
