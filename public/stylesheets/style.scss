@@ -403,11 +403,11 @@ label input[type='checkbox'] {
 }
 
 .mientras {
-    border: black 1px;
+    
     display: flex;
     padding-top: 15vh;
     padding-left: 5vw;
-    justify-content: space-evenly;
+   // justify-content: space-evenly;
 }
 .mapboxgl-popup {
     max-width: 400px;
@@ -506,3 +506,14 @@ section.jumbotron .container {
   position: relative;
 }
 
+////@at-root
+@media (max-width: 550px){
+    .card1{
+        padding-left: 13%;
+    }
+
+
+}
+.card .btn{
+    color: white;
+}

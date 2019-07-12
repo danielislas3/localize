@@ -318,11 +318,9 @@ label input[type='checkbox'] {
   display: none; }
 
 .mientras {
-  border: black 1px;
   display: flex;
   padding-top: 15vh;
-  padding-left: 5vw;
-  justify-content: space-evenly; }
+  padding-left: 5vw; }
 
 .mapboxgl-popup {
   max-width: 400px;
@@ -410,5 +408,12 @@ section.jumbotron:before {
 
 section.jumbotron .container {
   position: relative; }
+
+@media (max-width: 550px) {
+  .card1 {
+    padding-left: 13%; } }
+
+.card .btn {
+  color: white; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,16 +1,9 @@
-<div class=" mientras columns-cards">
-  <h1>Locations</h1>
-  {{#each locations as |location| }}
-  {{> locationCard }}
-  <a href="/search/locations/{{location.id}}">Nombre de locacion: {{location.name}}</a>
-  <p>link</p>
-  {{/each}}
-
-  <br />
-
-</div>
-
-
-<br />
+<div class="container card1" style="padding-top: 15vh">
+  <h2>Locations</h2>
+  <div class=" card-deck ">
+    {{#each locations as |location| }}
+      {{> locationCard }}
+    {{/each}}
+  </div>
 
 </div>

@@ -1,13 +1,14 @@
 <div class="mientras">
-  <form action="/myLocations/create/" method="POST" novalidate>
+<div class="container">
+  <form class =" form-group" action="/myLocations/create/" method="POST" novalidate>
     <p>
       <label for="name">Name</label>
-      <input type="text" name="name" placeholder="Name" id="name">
+      <input class="form-control  form-control-sm"type="text" name="name" placeholder="Name" id="name">
     </p>
 
     <p>
       <label for="locationType">Type</label>
-      <select name="locationType" id="locationType">
+      <select class="form-control  form-control-sm " name="locationType" id="locationType">
         <option value="bar">Bar</option>
         <option value="restaurant">Restaurante</option>
         <option value="library">Biblioteca</option>
@@ -16,11 +17,11 @@
       </select>
     </p>
     <p>
-      <input type="text" name="description" placeholder="Descripción">
+      <input class="form-control  form-control-sm"type="text" name="description" placeholder="Descripción">
     </p>
 
-    <input type="number" name="lng" id="lng" hidden>
-    <input type="number" name="lat" id="lat" hidden>
+    <input class="form-control  form-control-sm"type="number" name="lng" id="lng" hidden>
+    <input class="form-control  form-control-sm"type="number" name="lat" id="lat" hidden>
 
     <input class="btn btn-warning" type="submit" value="Create">
   </form>
@@ -28,6 +29,7 @@
   <div id="map" style="width: 400px; height: 300px"></div>
 </div>
 
+</din>
 <script>
   mapboxgl.accessToken = 'pk.eyJ1IjoiZGl1cml2aiIsImEiOiJjanAxdjA2cTQwMGp1M2tvYzZmZGp3bWc3In0.4cZEyLkU2ikqx_wb4A1z8A';
   const map = new mapboxgl.Map({
