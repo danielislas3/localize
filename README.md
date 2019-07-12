@@ -5,8 +5,13 @@ _[Loklize](https://protected-brushlands-21356.herokuapp.com/) es una aplicación
 ## Comenzando 🚀
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
-
-
+### CREDENCIALES PARA JUECES 📋
+```
+ADMIN: admin@iron.com
+PASS:123
+USER: user@iron.com 
+PASS:123
+```
 ### Pre-requisitos 📋
 
 _Que cosas necesitas para instalar el software y como instalarlas_
