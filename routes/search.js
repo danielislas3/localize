@@ -10,7 +10,7 @@ router.get('/locations', getAllLocations)
 
 router.get('/locations/:id', getOneLocation)
 
-// router.get('/locations/restaurants', getAllTypes)
+router.get('/locations/type/:locationType', getAllTypes)
 
 
 

@@ -20,7 +20,6 @@ li {
 }
 
 header {
-    
     display: flex;
     width: 100vw;
     height: 10vh;
@@ -28,7 +27,8 @@ header {
     top: 0;
     z-index: 1;
 }
-header a{
+
+header a {
     color: white;
 }
 
@@ -43,12 +43,12 @@ header nav {
 }
 
 header nav a {
-    margin-left: 50px;
+    margin-left: 2px;
     text-decoration: none;
 }
 
 .home {
-    background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/351-jackanstey0337-jj-ff.jpg?auto=format&bg=F4F4F3&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-1.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=1600&s=198ee838bc13ae3c8f0cc31b41b8e1c4") ;
+    background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/351-jackanstey0337-jj-ff.jpg?auto=format&bg=F4F4F3&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-1.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=1600&s=198ee838bc13ae3c8f0cc31b41b8e1c4");
     background-size: cover;
     display: flex;
     align-items: center;
@@ -403,173 +403,183 @@ label input[type='checkbox'] {
 }
 
 .mientras {
-    
     display: flex;
     padding-top: 15vh;
     padding-left: 5vw;
-   // justify-content: space-evenly;
+    // justify-content: space-evenly;
 }
+
 .mapboxgl-popup {
     max-width: 400px;
     font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-    }
+}
 
-    // *****************LANDING PAGE
-    .gi-2x{font-size: 2em;}
-.gi-3x{font-size: 3em;}
-.gi-4x{font-size: 4em;}
-.gi-5x{font-size: 5em;}
+// *****************LANDING PAGE
+.gi-2x {
+    font-size: 2em;
+}
+
+.gi-3x {
+    font-size: 3em;
+}
+
+.gi-4x {
+    font-size: 4em;
+}
+
+.gi-5x {
+    font-size: 5em;
+}
 
 .btn {
-  border-width: 0;
-  border-radius: 3px;
-  color: #2B3335;
+    border-width: 0;
+    border-radius: 3px;
+    color: #2B3335;
 }
 
 .btn-a {
-  background-color: #00cdff9c;
+    background-color: #00cdff9c;
 }
 
 .btn-b {
-  background-color: #AC9785;
+    background-color: #AC9785;
 }
 
 .btn-c {
-  background-color: #4E5356;
+    background-color: #4E5356;
 }
 
 .btn-c span,
 .btn-c {
-  color: #C5B1A7;
-  font-weight: normal;
-  font-size: 1em;
-  line-height: 1em;
-  display: inline-block;
-  vertical-align: middle;
+    color: #C5B1A7;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1em;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 section {
-  padding: 150px 0;
-  color: #2B3335;
+    padding: 150px 0;
+    color: #2B3335;
 }
 
 .section-services {
-  background: #EBEDEC;
+    background: #EBEDEC;
 }
-h4{
+
+h4 {
     margin-top: 4vh;
     margin-bottom: 2vh;
 }
 
 .section-contact {
-  background: #C5B1A7;
+    background: #C5B1A7;
 }
 
 .section-contact a {
-  color: #2B3335;
-  font-size: 1.5em;
+    color: #2B3335;
+    font-size: 1.5em;
 }
 
 .font-weight-normal {
-  font-weight: normal;
+    font-weight: normal;
 }
 
 .font-weight-bold {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 section.jumbotron {
-  background-image: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/351-jackanstey0337-jj-ff.jpg?auto=format&bg=F4F4F3&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-1.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=1600&s=198ee838bc13ae3c8f0cc31b41b8e1c4);
-  background-size: cover;
-  background-position: center center;
-  color: white;
-  position: relative;
-  margin: 0;
+    background-image: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/351-jackanstey0337-jj-ff.jpg?auto=format&bg=F4F4F3&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-1.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=1600&s=198ee838bc13ae3c8f0cc31b41b8e1c4);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    position: relative;
+    margin: 0;
 }
 
 section.jumbotron .container {
-  padding: 200px 0;
+    padding: 200px 0;
 }
 
 section.jumbotron:before {
-  content: "";
-  position: absolute;
-  opacity: .5;
-  background: #000;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+    content: "";
+    position: absolute;
+    opacity: .5;
+    background: #000;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 section.jumbotron .container {
-  position: relative;
+    position: relative;
 }
 
 ////@at-root
-@media (max-width: 550px){
-    .card1{
+@media (max-width: 550px) {
+    .card1 {
         padding-left: 13%;
     }
-
-
 }
 
-#contatti{
+#contatti {
     background-color: white;
     letter-spacing: 2px;
-    }
-  #contatti a{
-    color:black;
+}
+
+#contatti a {
+    color: black;
     text-decoration: none;
-  }
-  
-  
-  @media (max-width: 575.98px) {
-  
-    #contatti{padding-bottom: 800px;}
-    #contatti .maps iframe{
-      width: 100%;
-      height: 450px;
+}
+
+@media (max-width: 575.98px) {
+    #contatti {
+        padding-bottom: 800px;
     }
-   }
-  
-  
-  @media (min-width: 576px) {
-  
-     #contatti{padding-bottom: 800px;}
-  
-     #contatti .maps iframe{
-       width: 100%;
-       height: 450px;
-     }
-   }
-  
-  @media (min-width: 768px) {
-  
-    #contatti{padding-bottom: 350px;}
-  
-    #contatti .maps iframe{
-      width: 100%;
-      height: 850px;
+    #contatti .maps iframe {
+        width: 100%;
+        height: 450px;
     }
-  }
-  
-  @media (min-width: 992px) {
-    #contatti{padding-bottom: 200px;}
-  
-     #contatti .maps iframe{
-       width: 100%;
-       height: 700px;
-     }
-  }
-  
-  
-  #author a{
+}
+
+@media (min-width: 576px) {
+    #contatti {
+        padding-bottom: 800px;
+    }
+    #contatti .maps iframe {
+        width: 100%;
+        height: 450px;
+    }
+}
+
+@media (min-width: 768px) {
+    #contatti {
+        padding-bottom: 350px;
+    }
+    #contatti .maps iframe {
+        width: 100%;
+        height: 850px;
+    }
+}
+
+@media (min-width: 992px) {
+    #contatti {
+        padding-bottom: 200px;
+    }
+    #contatti .maps iframe {
+        width: 100%;
+        height: 700px;
+    }
+}
+
+#author a {
     color: rgb(0, 0, 0);
     text-decoration: none;
-      
-  }
-  #contatti h2{
-      color: #000
-  }
+}
+
+#contatti h2 {
+    color: #000
+}

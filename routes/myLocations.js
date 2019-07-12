@@ -19,16 +19,17 @@ const {
 } = require('../controllers/owner.controller')
 
 //localhost:3000/myLocations
+
 /*************Crud *****************/
 router.get('/create', isLoggedIn, checkRole, getCreateLocation)
 router.post('/create', isLoggedIn, postCreateLocation)
-    /***********cRud ******************/
+    /*************cRud *****************/
 router.get('/', isLoggedIn, checkRole, getLocations)
 router.get('/:id', isLoggedIn, getOneLocation)
-    /****************crUd ****************/
+    /*************crUd *****************/
 router.get('/:id/edit', getEditLocation)
 router.post('/:id', postEditLocation)
-    /*****************cruD ************/
+    /*************cruD *****************/
 router.get('/:id/delete', getDeleteLocation)
 
 

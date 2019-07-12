@@ -26,9 +26,18 @@ exports.getOneLocationPublic = (req, res, next) => {
         .catch(err => next(err))
 }
 exports.getAllTypes = (req, res, next) => {
-    Location.find(req.params.locationType)
-        .then(locations => res.render('search/locations', {
-            locations
-        }))
+    const {
+        locationType
+    } = req.params
+    Location.find({
+            locationType
+        })
+        .then(locations => {
+
+            res.render('search/locations', {
+                locations
+
+            })
+        })
         .catch(err => console.log(err))
 }
