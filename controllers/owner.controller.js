@@ -1,31 +1,6 @@
 const User = require('../models/User')
 const Location = require('../models/Location')
 
-// exports.getMyLocations = (req, res, next) => {
-//     Location.find()
-//         .then(users => res.render('owner/myLocations', {
-//             users
-//         }))
-//         .catch(err => console.log(err))
-// }
-
-// exports.addLocation = (req, res, next) => {
-//     Location.create({
-//             ...req.body,
-//             owner: req.user.id
-//         })
-//         .then(location => res.render('owner/myLocations'))
-//         .catch(err => console.log(err))
-// }
-
-// exports.deleteLocation = (req, res, next) => {
-//     const {
-//         id
-//     } = req.body
-//     Location.findByAndDelete(id)
-//         .then(location => res.redirect('/owner/myLocations'))
-
-// }
 
 exports.getLocations = (req, res, next) => {
     Location.find()

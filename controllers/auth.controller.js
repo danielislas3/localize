@@ -25,14 +25,6 @@ exports.getProfile = (req, res, next) => res.render('auth/profile', {
     user: req.user
 })
 
-// exports.getProfile = async (req, res, next) => {
-//     const user = await User.findOne({
-//         _id: req.user._id
-//     }).populate('Reviews')
-//     res.render('auth/profile', {
-//         user
-//     })
-// }
 
 exports.logout = (req, res, next) => {
     req.logOut()

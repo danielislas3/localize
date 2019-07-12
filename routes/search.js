@@ -14,5 +14,4 @@ router.get('/locations/:id', getOneLocation)
 
 
 
-
 module.exports = router

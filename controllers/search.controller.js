@@ -20,6 +20,7 @@ exports.getOneLocation = (req, res, next) => {
         .then(location => res.render('search/locationsDetails', location))
         .catch(err => next(err))
 }
+<<<<<<< HEAD
 
 // exports.getAllTypes = (req, res, next) => {
 
@@ -35,3 +36,15 @@ exports.getOneLocation = (req, res, next) => {
 //         }))
 //         .catch(err => console.log(err))
 // }
+=======
+exports.getOneLocationPublic = (req, res, next) => {
+    Location.findById(req.params.id)
+        .then(location => res.render('search/locationsDetails', location))
+        .catch(err => next(err))
+}
+exports.getAllTypes = (req, res, next) => {
+    Location.find(req.params.locationType)
+    .then(locations => res.render('search/locations', {locations}))
+    .catch(err => console.log(err))
+ }
+>>>>>>> premaster
