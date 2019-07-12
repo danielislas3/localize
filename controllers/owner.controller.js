@@ -45,12 +45,24 @@ exports.getEditLocation = (req, res, next) => {
 }
 
 exports.postEditLocation = (req, res, next) => {
+    const {
+        name,
+        photo,
+        locationType,
+        lat,
+        lng
+    } = req.body
+
     Location.findByIdAndUpdate(req.params.id, {
-            ...req.body
+            ...req.body,
+
         }, {
             new: true
         })
-        .then(location => res.redirect(`/myLocation/${location._id}`))
+        .then(location => {
+            console.log("redirigiendo")
+            res.redirect(`/myLocations/${location._id}`)
+        })
         .catch(err => next(err))
 }
 

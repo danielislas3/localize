@@ -29,7 +29,7 @@ router.get('/:id', isLoggedIn, getOneLocation)
 router.get('/:id/edit', getEditLocation)
 router.post('/:id', postEditLocation)
     /*****************cruD ************/
-router.get('/:id/edit', getDeleteLocation)
+router.get('/:id/delete', getDeleteLocation)
 
 
 
