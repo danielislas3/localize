@@ -50,7 +50,7 @@ exports.postEditLocation = (req, res, next) => {
         }, {
             new: true
         })
-        .then(location => res.redirect(`/myLocation/${location._id}`, location))
+        .then(location => res.redirect(`/myLocation/${location._id}`))
         .catch(err => next(err))
 }
 

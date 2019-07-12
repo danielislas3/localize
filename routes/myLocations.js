@@ -27,7 +27,7 @@ router.get('/', isLoggedIn, checkRole, getLocations)
 router.get('/:id', isLoggedIn, getOneLocation)
     /****************crUd ****************/
 router.get('/:id/edit', getEditLocation)
-router.post('/:id/edit', postEditLocation)
+router.post('/:id', postEditLocation)
     /*****************cruD ************/
 router.get('/:id/edit', getDeleteLocation)
 
