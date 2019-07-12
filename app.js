@@ -86,7 +86,7 @@ hbs.registerPartials(__dirname + '/views/partials')
 
 
 // default value for title local
-app.locals.title = 'Localize'
+app.locals.title = 'Loklize'
 
 const index = require('./routes/index')
 const search = require('./routes/search')

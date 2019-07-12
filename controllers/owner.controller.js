@@ -21,14 +21,16 @@ exports.getCreateLocation = (req, res, next) => res.render('owner/create')
 exports.postCreateLocation = (req, res, next) => {
     const {
         name,
-        photo,
+        
         locationType,
         lat,
         lng
     } = req.body
+    const photo = req.file.url
 
     Location.create({
             ...req.body,
+            photo: [photo],
             location: {
                 coordinates: [Number(lng), Number(lat)]
             },
@@ -47,14 +49,14 @@ exports.getEditLocation = (req, res, next) => {
 exports.postEditLocation = (req, res, next) => {
     const {
         name,
-        photo,
         locationType,
         lat,
         lng
     } = req.body
-
+    const photo = req.file.url
     Location.findByIdAndUpdate(req.params.id, {
             ...req.body,
+            photo: [photo]
 
         }, {
             new: true

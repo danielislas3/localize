@@ -1,6 +1,6 @@
 <div class="mientras">
   <div class="container">
-    <form class=" form-group" action="/myLocations/create/" method="POST" novalidate>
+    <form class=" form-group" action="/myLocations/create/" method="POST" novalidate enctype="multipart/form-data">
       <p>
         <label for="name">Name</label>
         <input class="form-control  form-control-sm" type="text" name="name" placeholder="Name" id="name">
@@ -19,6 +19,12 @@
       <p>
         <input class="form-control form-control-sm" type="text" name="description" placeholder="Descripción">
       </p>
+
+      <div class="custom-file">
+        <input name="photo" type="file" class="custom-file-input" id="inputGroupFile01"
+          aria-describedby="inputGroupFileAddon01">
+        <label class="custom-file-label" for="inputGroupFile01">Sube tu foto</label>
+      </div>
 
       <input class="form-control  form-control-sm" type="number" name="lng" id="lng" hidden>
       <input class="form-control  form-control-sm" type="number" name="lat" id="lat" hidden>

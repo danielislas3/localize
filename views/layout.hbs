@@ -27,13 +27,9 @@
 
 
     <nav class="mobil-nav">
-      {{#if loggedUser}}
+  
+      <a href="/search/locations"><img class="icon" src="https://res.cloudinary.com/ironhack-daniel/image/upload/v1562958807/Loklize_g8cydi.png"></a>
 
-      <label class="icon"><a href="/search/locations">Icono</a></label>
-      {{else}}
-      <label class="icon"><a href="/search/locations">Icono</a></label>
-
-      {{/if}}
       <input id="menu-toggle" type="checkbox" />
       <label for="menu-toggle" class="menu-on"> <i class="fas fa-bars fa-2x"></i></label>
       <label for="menu-toggle" class="menu-off"><i class="fas fa-times fa-2x"></i></label>
@@ -50,6 +46,12 @@
         <li class="nav-item"> <a href="/profile">Profilee</a></li>
         <li class="nav-item"> <a href="/logout">Logout</a></li>
         {{else}}
+        <li class="nav-item"><a href="/search/locations">Home</a></li>
+        <li class="nav-item"> <a href="/search/locations/type/restaurant">Restaurantes</a></li>
+        <li class="nav-item"><a href="/search/locations/type/bar">Bares</a></li>
+        <li class="nav-item"><a href="/search/locations/type/hotel">Hoteles</a></li>
+        <li class="nav-item"><a href="/search/locations/type/entreteinmentCenter">Centros de Entretenimiento</a></li>
+        <li class="nav-item"><a href="/search/locations/type/library">Bibliotecas</a></li>
         <li class="nav-item"><a href="/login">Login</a></li>
         <li class="nav-item"><a href="/signup"> Signup</a></li>
         {{/if}}
@@ -60,9 +62,9 @@
     <!-- Nav -->
     <nav class="nav">
       {{#if loggedUser}}
-      <label class="icon"><a href="/search/locations">Icono</a></label>
+      <a href="/search/locations"><img class="icon" src="https://res.cloudinary.com/ironhack-daniel/image/upload/v1562958807/Loklize_g8cydi.png"></a>
       {{else}}
-      <label class="icon"><a href="/search/locations">Icono</a></label>
+      <a href="/search/locations"><img class="icon" src="https://res.cloudinary.com/ironhack-daniel/image/upload/v1562958807/Loklize_g8cydi.png"></a>
 
       {{/if}}
 

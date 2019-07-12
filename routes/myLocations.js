@@ -1,4 +1,6 @@
 const router = require('express').Router()
+const uploadCloud = require('../config/cloudinary')
+
 const {
     isLoggedIn,
     checkLoggedUser
@@ -22,13 +24,13 @@ const {
 
 /*************Crud *****************/
 router.get('/create', isLoggedIn, checkRole, getCreateLocation)
-router.post('/create', isLoggedIn, postCreateLocation)
+router.post('/create', isLoggedIn, uploadCloud.single('photo'), postCreateLocation)
     /*************cRud *****************/
 router.get('/', isLoggedIn, checkRole, getLocations)
 router.get('/:id', isLoggedIn, getOneLocation)
     /*************crUd *****************/
 router.get('/:id/edit', getEditLocation)
-router.post('/:id', postEditLocation)
+router.post('/:id',uploadCloud.single('photo'),postEditLocation)
     /*************cruD *****************/
 router.get('/:id/delete', getDeleteLocation)
 

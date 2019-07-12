@@ -1,6 +1,6 @@
 <div class="mientras">
   <div class="container">
-    <form class=" form-group" action="/myLocations/{{_id}}/edit" method="POST">
+    <form class=" form-group" action="/myLocations/{{_id}}" method="POST" enctype="multipart/form-data">
       <p>
         <label for="name">Name</label>
         <input class="form-control  form-control-sm" type="text" name="name" placeholder="Name" id="name"
@@ -20,11 +20,16 @@
         <input class="form-control  form-control-sm" type="text" name="description" placeholder="Descripción"
           value="{{description}}">
       </p>
+       <div class="custom-file">
+        <input name="photo" type="file" class="custom-file-input" id="inputGroupFile01"
+          aria-describedby="inputGroupFileAddon01">
+        <label class="custom-file-label" for="inputGroupFile01">Sube tu foto</label>
+      </div>
 
 
+      <input  class="btn btn-warning" type="submit" value="Edit">
     </form>
       <div id='map' style='width: 400px; height: 300px;'></div>
-      <input  class="btn btn-warning" type="submit" value="Edit">
 
   </div>
 
