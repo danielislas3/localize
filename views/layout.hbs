@@ -7,11 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>{{title}}</title>
   {{!-- mapbox --}}
-    <script src='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
   <link href='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
-  <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.0/mapbox-gl-geocoder.min.js'></script>
-  <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.0/mapbox-gl-geocoder.css' type='text/css' />
-  
+  <script
+    src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.0/mapbox-gl-geocoder.min.js'></script>
+  <link rel='stylesheet'
+    href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.0/mapbox-gl-geocoder.css'
+    type='text/css' />
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/stylesheets/style.css" />
@@ -22,13 +25,13 @@
   <header id="header">
     <!-- Mobil nav -->
 
-     
+
     <nav class="mobil-nav">
       {{#if loggedUser}}
 
-        <label class="icon"><a href="/search">Icono</a></label>
+      <label class="icon"><a href="/search">Icono</a></label>
       {{else}}
-        <label class="icon"><a href="/">Icono</a></label>
+      <label class="icon"><a href="/">Icono</a></label>
 
       {{/if}}
       <input id="menu-toggle" type="checkbox" />
@@ -38,15 +41,15 @@
 
       <ul class="nav-list">
         {{#if loggedUser}}
-      <li class="nav-item"><a href="/search">Home</a></li>
-      <li class="nav-item"> <a href="/search/restaurants">Restaurantes</a></li>
-      <li class="nav-item"><a href="/search/bars">Bares</a></li>
-      <li class="nav-item"><a href="/search/hotels">Hoteles</a></li>
-      <li class="nav-item"><a href="/search/entreteinmentCenter">Centros de Entretenimiento</a></li>
-      <li class="nav-item"><a href="/search/libraries">Bibliotecas</a></li>
+        <li class="nav-item"><a href="/search">Home</a></li>
+        <li class="nav-item"> <a href="/search/restaurants">Restaurantes</a></li>
+        <li class="nav-item"><a href="/search/bars">Bares</a></li>
+        <li class="nav-item"><a href="/search/hotels">Hoteles</a></li>
+        <li class="nav-item"><a href="/search/entreteinmentCenter">Centros de Entretenimiento</a></li>
+        <li class="nav-item"><a href="/search/libraries">Bibliotecas</a></li>
         {{!--  --}}
-            
-            
+
+
         {{!--  --}}
         <li class="nav-item"> <a href="/profile">Profile</a></li>
         <li class="nav-item"> <a href="/logout">Logout</a></li>
@@ -61,23 +64,23 @@
     <!-- Nav -->
     <nav class="nav">
       {{#if loggedUser}}
-    <label class="icon"><a href="/search">Icono</a></label>
+      <label class="icon"><a href="/search">Icono</a></label>
       {{else}}
-    <label class="icon"><a href="/">Icono</a></label>
+      <label class="icon"><a href="/">Icono</a></label>
 
       {{/if}}
-     
+
 
       <ul class="nav-row">
         {{!-- <li class="nav-links"><a href="/">Home</a></li> --}}
-      <li class="nav-links"> <a href="/search/restaurants">Restaurantes</a></li>
-      <li class="nav-links"><a href="/search/bars">Bares</a></li>
-      <li class="nav-links"><a href="/search/hotels">Hoteles</a></li>
-      <li class="nav-links"><a href="/search/entreteinmentCenter">Centros de Entretenimiento</a></li>
-      <li class="nav-links"><a href="/search/libraries">Bibliotecas</a></li>
+        <li class="nav-links"> <a href="/search/restaurants">Restaurantes</a></li>
+        <li class="nav-links"><a href="/search/bars">Bares</a></li>
+        <li class="nav-links"><a href="/search/hotels">Hoteles</a></li>
+        <li class="nav-links"><a href="/search/entreteinmentCenter">Centros de Entretenimiento</a></li>
+        <li class="nav-links"><a href="/search/libraries">Bibliotecas</a></li>
 
         {{#if loggedUser}}
-     
+
         {{!--  --}}
         <li class="nav-links"> <a href="/profile">Profile</a></li>
         <li class="nav-links"><a href="/logout">Logout</a></li>

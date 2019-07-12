@@ -1,9 +1,9 @@
-<div class="container mientras columns-cards">
+<div class=" mientras columns-cards">
   <h1>Locations</h1>
-  {{#each locations }}
-  <p>{{this.locations}}</p>
+  {{#each locations as |location| }}
   {{> locationCard }}
-  <a href="/locations/{{this.locations.id}}">{{this.locations.name}}</a>
+  <a href="/search/locations/{{location.id}}">Nombre de locacion: {{location.name}}</a>
+  <p>link</p>
   {{/each}}
 
   <br />

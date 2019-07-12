@@ -2,12 +2,17 @@ const router = require('express').Router()
 
 const {
     getAllLocations,
-    getOneLocation
+    getOneLocation,
+    getAllTypes
 } = require('../controllers/search.controller')
 
 router.get('/locations', getAllLocations)
 
-router.get('/:id', getOneLocation)
+router.get('/locations/:id', getOneLocation)
+
+// router.get('/locations/restaurants', getAllTypes)
+
+
 
 
 module.exports = router
